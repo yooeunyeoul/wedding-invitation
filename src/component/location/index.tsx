@@ -50,10 +50,9 @@ export const Location = () => {
             네이버 지도, 카카오 네비, 티맵 등 이용
             <br />
             <b>사랑의교회</b> 검색
-            <br />
-            미션센터(북) 2층 언약채플
-            <br />
-            <br />
+          </div>
+          <div />
+          <div className="content">
             <b>※ 교회 사정상 화환은 정중히 사양합니다.</b>
             <br />
             <br />

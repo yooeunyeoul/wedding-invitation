@@ -16,7 +16,7 @@ export const WEDDING_DATE_FORMAT = `YYYY년 MMMM D일 dddd A h시${WEDDING_DATE.
 // 예: 예식일 6월 -> 6월 6일 현충일
 export const HOLIDAYS = [6]
 
-export const LOCATION = "사랑의교회 언약채플"
+export const LOCATION = "사랑의교회 미션센터(북) 2층 언약채플"
 export const LOCATION_ADDRESS = "서울특별시 서초구 반포대로 121"
 
 // 카카오톡 공유 시 위치 정보로 사용할 주소.
