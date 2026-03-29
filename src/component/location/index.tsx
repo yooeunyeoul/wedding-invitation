@@ -1,4 +1,4 @@
-import { Map } from "./map"
+import mapGuideImage from "../../images/map-guide.png"
 import CarIcon from "../../icons/car-icon.svg?react"
 import BusIcon from "../../icons/bus-icon.svg?react"
 import { LazyDiv } from "../lazyDiv"
@@ -13,7 +13,9 @@ export const Location = () => {
           {LOCATION}
           <div className="detail">{LOCATION_ADDRESS}</div>
         </div>
-        <Map />
+        <div className="map-guide">
+          <img src={mapGuideImage} alt="약도" style={{ width: "100%", borderRadius: "0.5rem" }} />
+        </div>
       </LazyDiv>
       <LazyDiv className="card location">
         <div className="location-info">
@@ -25,28 +27,17 @@ export const Location = () => {
           <div className="content">
             * 지하철 이용시
             <br />
-            지하철 2호선 <b>낙성대역 4번출구</b> 나와서
-            <br />
-            → 첫번째 골목 끼고 좌회전
-            <br />→ 마을버스 <b>관악 02번</b> 승차
-            <br />→ <b>서울대후문·연구공원 정류장</b> 하차
-            <br />
-            → 길 건너 간판 참고해 도보로 100m 이동
-            <br />
-            검은색 피라미드 유리 건물입니다.
+            지하철 2호선 <b>서초역 3번 출구</b> 도보 1분
           </div>
           <div />
           <div className="content">
             * 버스 이용 시
             <br />
-            - 간선(파랑): 461, 641
+            - 간선(파랑): 140, 406, 740
             <br />
-            - 지선(초록): 5413, 5524, 5528
+            - 지선(초록): 3412, 서초18
             <br />
-            반드시 <b>낙성대입구</b> 하차
-            <br />→ 마을버스 <b>관악 02번</b> 이용
-            <br />
-            이하 위와 동일합니다.
+            <b>사랑의교회</b> 또는 <b>서초역</b> 하차
           </div>
         </div>
         <div className="location-info">
@@ -58,18 +49,23 @@ export const Location = () => {
           <div className="content">
             네이버 지도, 카카오 네비, 티맵 등 이용
             <br />
-            <b>서울대학교 연구공원 웨딩홀</b> 검색
+            <b>사랑의교회</b> 검색
             <br />
-            - 주차 요금은 무료입니다.
+            미션센터(북) 2층 언약채플
             <br />
-            (주차장 이용 시 웨딩홀과 바로 연결)
-          </div>
-          <div />
-          <div className="content">
-            <b>
-              ※ 서울대학교 정, 후문을 통과할 경우 통행료가 발생하므로
-              유의바랍니다. 낙성대 방향으로 이용해주세요.
-            </b>
+            <br />
+            <b>※ 교회 사정상 화환은 정중히 사양합니다.</b>
+            <br />
+            <br />
+            교회 주차공간이 협소하니 가급적
+            <br />
+            대중교통을 이용해 주시기 바랍니다.
+            <br />
+            차량 이용 시 <b>청첩장을 지참</b>하셔서
+            <br />
+            교회주차장 입구에 제시해 주시길
+            <br />
+            부탁드립니다.
           </div>
         </div>
       </LazyDiv>

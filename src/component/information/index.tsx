@@ -1,5 +1,6 @@
 import { BRIDE_INFO, GROOM_INFO } from "../../const"
 import { STATIC_ONLY } from "../../env"
+import receptionGuide from "../../images/reception-guide.png"
 import { Button } from "../button"
 import { LazyDiv } from "../lazyDiv"
 import { useModal } from "../modal"
@@ -12,9 +13,18 @@ export const Information1 = () => {
       <div className="info-card">
         <div className="label">식사 안내</div>
         <div className="content">
-          식사시간: 12시 30분 ~ 14시 30분
+          예식 시작 30분 전부터
           <br />
-          장소: 지하 1층 연회장
+          예식 시작 시간 포함 2시간까지 식사 가능
+          <br />
+          <br />
+          장소: S 드림센터(남) 6F 다니엘홀
+        </div>
+      </div>
+      <div className="info-card">
+        <div className="label">피로연장 안내</div>
+        <div className="content">
+          <img src={receptionGuide} alt="피로연장 안내" style={{ width: "100%", borderRadius: "0.5rem" }} />
         </div>
       </div>
     </>
